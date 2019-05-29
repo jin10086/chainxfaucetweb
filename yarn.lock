@@ -703,33 +703,33 @@
     pbkdf2 "^3.0.17"
     randombytes "^2.0.6"
 
-"@chainx/rpc-core@^2.13.0-alpha.0":
-  version "2.13.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@chainx/rpc-core/-/rpc-core-2.13.0-alpha.0.tgz#703401e91bc82f14381ef2d01ac513b50b231f07"
-  integrity sha512-OS7TjvcKHnP3TUT26Fs6ADWx8FmcNcjyk406xKKF6QWKSWgqmQ19IpH7g3c8BhyzlMY1pvfjDAm0J0FL6iNaTg==
+"@chainx/rpc-core@^2.13.0-alpha.4":
+  version "2.13.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@chainx/rpc-core/-/rpc-core-2.13.0-alpha.4.tgz#3d258fae9356c25fbd7c492949f10652b1cef445"
+  integrity sha512-aFTe5ChY7ItDue0BsLCCyyZNVow8GucE2RXax5FSs7nqtRli/pg7lwp79pYIrrbM18ZQaKLEBuFQVg1X3BVS6A==
   dependencies:
     "@chainx/jsonrpc" "^2.12.0"
-    "@chainx/rpc-provider" "^2.13.0-alpha.0"
+    "@chainx/rpc-provider" "^2.13.0-alpha.4"
     "@chainx/storage" "^2.12.0"
     "@chainx/types" "^2.12.0"
     "@polkadot/util" "^0.90.1"
 
-"@chainx/rpc-provider@^2.13.0-alpha.0":
-  version "2.13.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@chainx/rpc-provider/-/rpc-provider-2.13.0-alpha.0.tgz#16102f6700c525721cb0255c2057d1ecd91d68d6"
-  integrity sha512-Bepd3+j29qp2ikRlNrEQnHBK0WIYl+th6mWmHyZ+bJMZge3tLIswTGwtMv6kaW4Dqvgka9ae/S0mJW+jtz+bPw==
+"@chainx/rpc-provider@^2.13.0-alpha.4":
+  version "2.13.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@chainx/rpc-provider/-/rpc-provider-2.13.0-alpha.4.tgz#2613b8b2f8123f7b4971a24bd3cc2c0ef038246c"
+  integrity sha512-7yiTVkFKedFk3oTI2YPKFsGJpoCTjvHnkyrffFH/2ZFHcJ8iqBiJ+Tf/wXLvtlkb36F4w2MDukC0Zrc2ZIMvyg==
   dependencies:
     "@polkadot/util" "^0.34.37"
     eventemitter3 "^3.1.0"
     isomorphic-fetch "^2.2.1"
     websocket "^1.0.28"
 
-"@chainx/rpc-rx@^2.13.0-alpha.0":
-  version "2.13.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@chainx/rpc-rx/-/rpc-rx-2.13.0-alpha.0.tgz#064b4b5db4f9067dda123134f2bfc9aadb0f08e0"
-  integrity sha512-WTddbETxAsUHcSpXmgx1ef8SI7XsALQpVTRvFvgipknKhwRE/slcwrNvBfiO8MBc8Sj+VbvkB9QKaheS5OVIcQ==
+"@chainx/rpc-rx@^2.13.0-alpha.4":
+  version "2.13.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@chainx/rpc-rx/-/rpc-rx-2.13.0-alpha.4.tgz#a671efaa4cdc26e32821a80fe4929ace8bb494e5"
+  integrity sha512-mmkAkvC0jQ8h1bprtQHMXuv1NkjURWImeMxQBZUo6fG4+bvpm0W0evOtgehbntDyRpBbEIAHeW1kATY7wkIULQ==
   dependencies:
-    "@chainx/rpc-core" "^2.13.0-alpha.0"
+    "@chainx/rpc-core" "^2.13.0-alpha.4"
     "@polkadot/util" "^0.90.1"
     rxjs "^6.3.3"
 
@@ -2240,14 +2240,14 @@ caseless@~0.12.0:
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
 chainx.js@^2.13.0-alpha.3:
-  version "2.13.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/chainx.js/-/chainx.js-2.13.0-alpha.3.tgz#136c82f84fb521d3ed2ccbe9c07ab9c9f1d02d2d"
-  integrity sha512-isvkfUVZx7lvi1UnXilaN7/aL4Osj/IoxorTrFAwEk9rVvp0D3T29hNgyS0CjpKxGJNbbweeqmPaJirM0zm70A==
+  version "2.13.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/chainx.js/-/chainx.js-2.13.0-alpha.4.tgz#c482dfc2cc2256c47688ba019c97ac67da3273db"
+  integrity sha512-ReItSiB6lXZFypbqA1v7SO312Mp9VJ9ZSfK9ajwKnEJIGxe1ZvUJmHQDT7KkopbscRYnQz7ZngbyoS2siOGqag==
   dependencies:
     "@chainx/account" "^2.12.0"
     "@chainx/extrinsics" "^2.12.0"
-    "@chainx/rpc-provider" "^2.13.0-alpha.0"
-    "@chainx/rpc-rx" "^2.13.0-alpha.0"
+    "@chainx/rpc-provider" "^2.13.0-alpha.4"
+    "@chainx/rpc-rx" "^2.13.0-alpha.4"
     "@chainx/storage" "^2.12.0"
     "@chainx/types" "^2.12.0"
     "@polkadot/keyring" "^0.90.1"
@@ -4294,9 +4294,9 @@ hex-color-regex@^1.1.0:
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
 highlight.js@^9.6.0:
-  version "9.15.6"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.6.tgz#72d4d8d779ec066af9a17cb14360c3def0aa57c4"
-  integrity sha512-zozTAWM1D6sozHo8kqhfYgsac+B+q0PmsjXeyDrYIHHcBN0zTVT66+s2GW1GZv7DbyaROdLXKdabwS/WqPyIdQ==
+  version "9.15.8"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.8.tgz#f344fda123f36f1a65490e932cf90569e4999971"
+  integrity sha512-RrapkKQWwE+wKdF73VsOa2RQdIoO3mxwJ4P8mhbI6KYJUraUHRKM5w5zQQKXNk0xNL4UVRdulV9SBJcmzJNzVA==
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
