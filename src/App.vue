@@ -35,13 +35,16 @@
         <div class="panel-heading">
           <h3>transactions</h3>
         </div>
-        <div class="panel-body" style="flex-direction: column; display: flex;"></div>
+        <div class="panel-body" style="flex-direction: column; display: flex;">
+          <a :href="txhashUrl">{{txhash}}</a>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script>
+import { all } from "q";
 const Chainx = require("chainx.js").default;
 const axios = require("axios");
 const chainx = new Chainx("wss://w1.chainx.org/ws");
@@ -52,7 +55,8 @@ export default {
   data() {
     return {
       pcxBalance: null,
-      userPCXAddress: null
+      userPCXAddress: null,
+      txhash: null
     };
   },
   mounted() {
@@ -70,13 +74,24 @@ export default {
 
         //{"status":1,"msg":"转账成功","txHash":"0x1a0cd452312cb09533fed346f38fbfdb09b5e8154561b20721f5a60be347ced0"}#
         //{msg: "PCX余额不为空",status: 0}
-        //成功则 status为1,则显示txHash，并 生成这样的网址https://scan.chainx.org/txs/0x1a0cd452312cb09533fed346f38fbfdb09b5e8154561b20721f5a60be347ced0 
+        //成功则 status为1,则显示txHash，并 生成这样的网址https://scan.chainx.org/txs/0x1a0cd452312cb09533fed346f38fbfdb09b5e8154561b20721f5a60be347ced0
         //失败的话 则 显示masg里面的内容
         axios
           .get("http://101.37.151.113/" + hexAddress)
-          .then(response => ())
+          .then(function(response) {
+            if (response.status === 0) {
+              alert(response.msg);
+            } else {
+              this.txhash = response.txHash;
+            }
+          })
           .catch(error => console.log(error));
       }
+    }
+  },
+  computed: {
+    txhashUrl: function() {
+      return "https://scan.chainx.org/txs/" + this.txhash;
     }
   }
 };
