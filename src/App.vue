@@ -5,11 +5,11 @@
     </nav>
     <section class="container">
       <div class="panel panel-default">
-        <div class="panel-heading">
+        <!-- <div class="panel-heading">
           <h3>水龙头</h3>
-        </div>
+        </div>-->
         <div class="panel-body">
-          <div class="input-group">
+          <div class="input-group1">
             <span class="input-group-addon">address:</span>
             <input
               v-model="userPCXAddress"
@@ -28,7 +28,6 @@
         <div class="panel-body">
           <div>地址: 5T1DD7nEXvBmVXYCQFaZ4vEhVw1kDSJivZty7t7pdf2wQyF8</div>
           <div>余额: {{ pcxBalance/1e8.toFixed(4) }} PCX</div>
-          <div>donate to faucet:</div>
         </div>
       </div>
       <div class="panel panel-default">
@@ -102,8 +101,21 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 800px;
+  margin: 60px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.panel {
+  margin-bottom: 40px;
+}
+.input-group1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.input-group-addon {
+  margin-right: 10px;
 }
 </style>
